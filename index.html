@@ -9,13 +9,63 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="titulo">Portfolio de José Manuel Benetti</h1>
-  <div class="topnav">
-        <div class="btnnav"><a href="#">Acerca de mí</a></div>
-        <div class="btnnav"><a href="#">Pasatiempos y habilidades blandas</a></div>
-        <div class="btnnav"><a href="#">Formaciones y cursos</a></div>
-        <div class="btnnav"><a href="#">Experiencia en programación</a></div>
-        <div class="btnnav"><a href="#">Contacto</a></div>
+  <div id="contenido">
+    <div id="top">
+        <div id="logo">
+          <div id="estrella"><img src="img/estrella.png"></div>
+          <div id="nombre">José Manuel Benetti</div>
+        </div>
+        <div class="topnav">
+             <div class="btnnav"><a href="#sobremi">Sobre mí</a></div>
+             <div class="btnnav"><a href="#skills">Skills</a></div>
+             <div class="btnnav"><a href="#hobbies">Hobbies</a></div>
+             <div class="btnnav"><a href="#">Formación</a></div>
+             <div class="btnnav"><a href="#">Proyectos</a></div>
+             <div class="btnnav" id="btnmail"><a href="mailto:josemanuelbenetti@gmail.com">josemanuelbenetti@gmail.com</a></div>
+        </div>
+    </div>
+    <div id="presentacion">
+        <div id="textopresentacion">
+          <div id="titulopresentacion">Hola, mi nombre es José Manuel y soy desarrollador.</div>
+          <div id="descripcionpresentacion">Tengo experiencia en Visual Basic, C#, PLC y desarrollo Web. Realicé un curso de programación de PLC en Schneider Electric y actualmente estoy cursando Oracle Next Education.</div>
+          <div id="linkspresentacion">
+            <div class="linkpersonal"><a href="#">GitHub</a><a class="flecha" href="#">⬈</a></div>  
+            <div class="linkpersonal"><a href="#">LinkedIn</a><a class="flecha" href="#">⬈</a></div> 
+            <div class="linkpersonal"><a href="#">Instagram</a><a class="flecha" href="#">⬈</a></div> 
+            <div class="linkpersonal"><a href="#">Currículum</a><a class="flecha" href="#">⬈</a></div> 
+          </div>
+        </div>
+        <div id="foto">
+          <img id="fotoperfil" src="img/fotoperfil.png">
+        </div>
+    </div>
+    <div id="sobremi">
+        <div id="titulosobremi">Sobre mí</div>
+        <div id="textosobremi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div id="firma"><img src="img/firma.png"></div>
+    </div>
+    <div id="skills" class="skillsyhobbies">
+      <div class="tituloskillsyhobbies">Skills</div>
+      <div class="miitem"><img src="iconos/html.png">HTML 5</div>
+
+      <div class="miitem"><img src="iconos/javascript.png">Javascript</div>
+      <div class="miitem"><img src="iconos/css.png">CSS</div>
+      <div class="miitem"><img src="iconos/jquery.png">JQuery</div>
+      <div class="miitem"><img src="iconos/php.png">PHP</div>
+      <div class="miitem"><img src="iconos/mysql.png">MySQL</div>
+      <div class="miitem"><img src="iconos/vb.png">Visual Basic</div>
+      <div class="miitem"><img src="iconos/plc.png">PLC</div>
+      <div class="miitem"><img src="iconos/csharp.png">C#</div>
+    </div>
+    <div id="hobbies" class="skillsyhobbies">
+      <div class="tituloskillsyhobbies">Hobbies</div>
+      <div class="miitem"><img src="iconos/bicicleta.png">Bicicleta</div>
+      <div class="miitem"><img src="iconos/videojuegos.png">Videojuegos</div>
+      <div class="miitem"><img src="iconos/música.png">Escuchar música</div>
+      <div class="miitem"><img src="iconos/series.png">Ver películas</div>
+      <div class="miitem"><img src="iconos/bailar.png">Bailar</div>
+      <div class="miitem"><img src="iconos/viajar.png">Viajar</div>
+    </div>
   </div>
 </body>
 </html>

@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,9 +7,54 @@ body {
   font-family: Tahoma, Verdana, Geneva, sans-serif;
 }
 
+#contenido {
+  position: absolute;
+  width: 1440px;
+  height: 5020px;
+  padding-left: 60px;
+  background: #F5F5F5;
+}
+
+#estrella {
+  float: left;
+}
+
+#estrella img{
+  height: 50px;
+}
+
+#nombre {
+  float: left;
+  padding: 16px 0px 14px 8px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 19px;
+}
+
+#top {
+  display:  block;
+}
+
+#logo {
+  float:  left;
+  margin-right:  300px;
+}
+
 .topnav {
+  float:  left;
   background-color: #333;
   overflow: hidden;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .topnav a {
@@ -34,6 +77,142 @@ body {
 }
 
 .btnnav {
-  width: 19%;
+  width: 100px;
   display: inline-block;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #464646;
+
+}
+
+#btnmail {
+  width: 250px;
+  font-weight: bold;
+}
+
+#presentacion {
+
+}
+
+#textopresentacion {
+  float: left;
+  width:  1069px;
+  padding-top: 30px;
+}
+
+#titulopresentacion {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 61px;
+}
+
+#descripcionpresentacion {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.linkpersonal {
+  float: left;
+  margin-top: 10px;
+  margin-right: 22px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+
+.linkpersonal a:link {
+  text-decoration: none;
+  color: #464646;
+}
+
+.linkpersonal a:visited {
+  text-decoration: none;
+  color: #464646;
+}
+
+.flecha {
+  margin-left: 5px;
+}
+
+#foto {
+  float: left;
+}
+
+#foto img {
+  margin-top: 15px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#sobremi {
+  padding-top: 30px;
+  clear: both;
+  width:  1100px;
+  background: #EAF2FD;
+}
+
+#titulosobremi {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+#textosobremi {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#firma img{
+  width:  140px;
+}
+
+.skillsyhobbies {
+  clear:  both;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.tituloskillsyhobbies {
+  padding-top: 30px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px; 
+  text-align: center; 
+}
+
+.miitem {
+  margin-top: 120px;
+  margin-right: 75px;
+  float: left;
+  text-align: center;
+}
+
+.miitem img {
+   margin-left:  30%;
+   height:  37px;
+   display:  block;
 }
