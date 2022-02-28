@@ -2,8 +2,27 @@
   box-sizing: border-box;
 }
 
+:root {
+  --escalahorizontal:  1;
+  --escalavertical: 1;
+  }
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/raleway-v26-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('fonts/raleway-v26-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/raleway-v26-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/raleway-v26-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/raleway-v26-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/raleway-v26-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
 body {
-  background-color: lightblue;
+  background-color: #fcf5f5;
   font-family: Tahoma, Verdana, Geneva, sans-serif;
 }
 
@@ -12,7 +31,7 @@ body {
   width: 1440px;
   height: 5020px;
   padding-left: 60px;
-  background: #F5F5F5;
+  background: #fcf5f5;
 }
 
 #estrella {
@@ -20,7 +39,8 @@ body {
 }
 
 #estrella img{
-  height: 50px;
+  //height: 50px;
+  width: calc(var(--escalavertical)*50px);
 }
 
 #nombre {
@@ -154,7 +174,8 @@ body {
 
 #foto img {
   margin-top: 15px;
-  width: 200px;
+  /*width: 200px;*/
+  width: calc(var(--escalahorizontal)*200px);
   border-radius: 50%;
 }
 
@@ -182,19 +203,21 @@ body {
 }
 
 #firma img{
-  width:  140px;
+  /*width:  140px;*/
+  width: calc(var(--escalahorizontal)*140px);
 }
 
-.skillsyhobbies {
+.areadetalles {
   clear:  both;
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  padding-top: 30px;
 }
 
-.tituloskillsyhobbies {
+.titulodetalles {
   padding-top: 30px;
   font-family: Raleway;
   font-style: normal;
@@ -206,13 +229,95 @@ body {
 
 .miitem {
   margin-top: 120px;
-  margin-right: 75px;
+  margin-right: 25px;
+  width: 100px;
   float: left;
   text-align: center;
+  background-color: white;
 }
 
 .miitem img {
    margin-left:  30%;
    height:  37px;
    display:  block;
+}
+
+.itemformacion {
+  margin-top: 40px;
+  margin-right: 10px;
+  width:  200px;
+  float: left;
+}
+
+.cuadroformacion {
+  margin-right: 75px;
+  height: 200px;
+  width:  200px;
+  background-color: white;
+  text-align: center;
+}
+
+.cuadroformacion img{
+  width:  100%;
+}
+
+.tituloitem {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.detalleitem {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.itemexperiencia {
+  margin-right: 10px;
+  width:  90%;
+  float: left;
+  margin-top:  30px;
+}
+
+.cuadroexperiencia {
+  width:  50%;
+  background-color: white;
+  text-align: center;
+  float: left;
+
+}
+
+.imagenizquierda {
+  padding-left: 60%;
+  width:  100%;
+}
+
+.imagenderecha
+{
+  padding-left:  10%;
+  padding-right:  50%;
+  width: 100%;
+}
+
+.bloqueexperiencia {
+  padding-left: 5%;
+  float: left;
+  width:  50%;
+}
+.tituloexperiencia {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 2%;
+}
+
+.detalleexperiencia {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
 }
