@@ -29,7 +29,7 @@ body {
 #contenido {
   position: absolute;
   width: 1440px;
-  height: 5020px;
+  padding-bottom: 100px;
   padding-left: 60px;
   background: #fcf5f5;
 }
@@ -321,3 +321,49 @@ body {
   font-size: 16px;
   display: block;
 }
+
+#contacto {
+  background-color: #EAF2FD;
+  height: 600px;
+}
+
+#contactoimagen {
+  float: left;
+  width:  30%;
+}
+
+#contactoimagen img {
+  padding-left: 20%;
+}
+
+#bloquecontacto {
+  width:  50%;
+  padding-left: 5%;
+  float: left;
+  background-color: transparent;
+}
+
+#titulocontacto {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
+#detallecontacto {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+  }
