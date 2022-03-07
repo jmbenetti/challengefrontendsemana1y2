@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <title>Challenge Front-End semana 1 y 2</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,13 +16,14 @@
           <div id="estrella"><img src="img/estrella.png"></div>
           <div id="nombre">José Manuel Benetti</div>
         </div>
-        <div class="topnav">
+        <div class="topnav" id="mitopnav">
              <div class="btnnav"><a href="#sobremi">Sobre mí</a></div>
              <div class="btnnav"><a href="#skills">Skills</a></div>
              <div class="btnnav"><a href="#hobbies">Hobbies</a></div>
              <div class="btnnav"><a href="#formación">Formación</a></div>
              <div class="btnnav"><a href="#proyectos">Proyectos</a></div>
              <div class="btnnav" id="btnmail"><a href="mailto:josemanuelbenetti@gmail.com">josemanuelbenetti@gmail.com</a></div>
+             <div class="btnnav" id="menu"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></div>
         </div>
     </div>
     <div id="presentacion">
@@ -105,8 +107,8 @@
       </div>
       <div class="itemexperiencia">
         <div class="bloqueexperiencia">
-          <div class="tituloexperiencia">Programador PC y PLC</div>
-          <div class="detallexperiencia">Desarrollo y mantenimiento de sistemas de gestión en Visual Basic, C# y PHP . Desarrollo y mantenimiento web. Programación de sistemas tipo SCADA a medida para la industria. Programación PLC. Puesta en marcha de software industrial.</div>
+          <div class="tituloexperiencia alinearderecha">Programador PC y PLC</div>
+          <div class="detallexperiencia alinearderecha">Desarrollo y mantenimiento de sistemas de gestión en Visual Basic, C# y PHP . Desarrollo y mantenimiento web. Programación de sistemas tipo SCADA a medida para la industria. Programación PLC. Puesta en marcha de software industrial.</div>
         </div>
         <div class="cuadroexperiencia"><img class="imagenderecha" src="img/st.jpg"></div>
       </div>
@@ -119,8 +121,8 @@
       </div>
       <div class="itemexperiencia">
         <div class="bloqueexperiencia">
-          <div class="tituloexperiencia">Sistema de Gestión C#</div>
-          <div class="detallexperiencia">Desarrollo, adaptación e implementación.</div>
+          <div class="tituloexperiencia alinearderecha">Sistema de Gestión C#</div>
+          <div class="detallexperiencia alinearderecha">Desarrollo, adaptación e implementación.</div>
         </div>
         <div class="cuadroexperiencia"><img class="imagenderecha" src="img/bomberos.jpg"></div>
       </div>
@@ -133,8 +135,8 @@
       </div>
       <div class="itemexperiencia">
         <div class="bloqueexperiencia">
-          <div class="tituloexperiencia">Juego de aventura</div>
-          <div class="detallexperiencia">Desarrollo en AGS utilizando javascript.</div>
+          <div class="tituloexperiencia alinearderecha">Juego de aventura</div>
+          <div class="detallexperiencia alinearderecha">Desarrollo en AGS utilizando javascript.</div>
         </div>
         <div class="cuadroexperiencia"><img class="imagenderecha" src="img/ags.png"></div>
       </div>
@@ -142,11 +144,19 @@
     <div id="contacto" class="areadetalles">
       <div id="contactoimagen"><img src="img/contacto.png"></div>
       <div id="bloquecontacto">
-        <div id="titulocontacto">Contacto</div>
-        <div id="detallecontacto">¿Quiere contactarme? Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</div>
+        <form action="#">
+          <div id="titulocontacto">Contacto</div>
+          <div id="detallecontacto">¿Quiere contactarme? Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</div>
+          <input type="text" placeholder="Nombre y apellido" id="nombrecontacto" class="detalleform">
+          <input type="email" placeholder="Correo electrónico" id="email" class="detalleform">
+          <input type="text" placeholder="Asunto" id="asunto" class="detalleform">
+          <textarea rows="4" cols="50" placeholder="Escriba su mensaje aquí" id="mensaje" class="detalleform"></textarea>
+          <input type="submit" id="enviar">
+        </form>
       </div>
     </div>
   </div>
+<script src="script.js"></script>
 </body>
 <footer>
 <p>©2022 - Realizado por José Manuel Benetti.</p>
