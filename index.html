@@ -144,11 +144,11 @@
     <div id="contacto" class="areadetalles">
       <div id="contactoimagen"><img src="img/contacto.png"></div>
       <div id="bloquecontacto">
-        <form action="#">
+        <form action="#" onsubmit="return validarForm()">
           <div id="titulocontacto">Contacto</div>
           <div id="detallecontacto">¿Quiere contactarme? Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</div>
           <input type="text" placeholder="Nombre y apellido" id="nombrecontacto" class="detalleform">
-          <input type="email" placeholder="Correo electrónico" id="email" class="detalleform">
+          <input type="text" placeholder="Correo electrónico" id="email" class="detalleform">
           <input type="text" placeholder="Asunto" id="asunto" class="detalleform">
           <textarea rows="4" cols="50" placeholder="Escriba su mensaje aquí" id="mensaje" class="detalleform"></textarea>
           <input type="submit" id="enviar">
